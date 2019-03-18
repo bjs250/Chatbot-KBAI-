@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ## Projects for CS-4635-A AND CS-7637-A AND CS-4635-O01 AND CS-7637-O
 
 ### Requirements
@@ -20,25 +19,3 @@ Python 3.6 or above
 ```
 python AgentGrader.py
 
-============================================
-Autograder - Version Project 3 student110318
-
-
-usage: -s <json containing syllabus (statements/questions)>
-       -l <path/filename to log file>
-       -v verbose output to console
-       -h this message to console
-============================================
-
-Opening frames: Syllabus.json
-Redirecting to file: results.out
-Logging to file: results.log
-
-```
-
-
-
-=======
-# Chatbot-KBAI-
-Attempt to create the syllabus chatbot from KBAI Participation Project
->>>>>>> 44575ce199cc19c3da23c1b4610979d9329c4040
