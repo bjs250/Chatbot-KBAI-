@@ -1,7 +1,7 @@
 import utilities
 
-class project:
-	classname = "project"
+class assignment:
+	classname = "assignment"
 	submission_type = None
 	submission_location = None
 	count = 0
@@ -14,25 +14,25 @@ class project:
 		self.duration = None
 
 	def getCount(self):
-		return project.count
+		return assignment.count
 
 	def setCount(self,value):
-		project.count = value
+		assignment.count = value
 
 	def incrementCount(self):
-		project.count += 1
+		assignment.count += 1
 
 	def getSubmission_type(self):
-		return project.submission_type
+		return assignment.submission_type
 
 	def setSubmission_type(self,value):
-		project.submission_type = value
+		assignment.submission_type = value
 
 	def getSubmission_location(self):
-		return project.submission_location
+		return assignment.submission_location
 
 	def setSubmission_location(self,value):
-		project.submission_location = value
+		assignment.submission_location = value
 
 	#####################################
 
@@ -50,8 +50,6 @@ class project:
 					self.name = statement[index-1]
 				elif index + 1 < len(statement) and utilities.RepresentsInt(statement[index+1]):
 					self.name = statement[index+1]
-				else:
-					self.name = project.classname
 
 	# Take whatever number is left in the statement
 	def find_and_set(self,topic,statement,nouns):
@@ -67,15 +65,14 @@ class project:
 			for word in statement:
 				if utilities.RepresentsInt(word):
 					self.duration = word
-
 		elif topic == "submission_type":
 			for word in statement:
 				if word in nouns:
-					project.submission_type = word
+					assignment.submission_type = word
 		elif topic == "submission_location":
 			for word in statement:
 				if word in nouns:
-					project.submission_location = word
+					assignment.submission_location = word
 		elif topic == "grade":
 			for word in statement:
 				if '%' in word:

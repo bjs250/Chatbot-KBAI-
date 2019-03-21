@@ -1,1 +1,89 @@
 Common Sense Reasoning w/ Primitive Actions
+
+                        "the course is 10 weeks",
+                    x    "project 1 will be available start of week 3",
+                    x    "Project 1 will be due end of week 6",
+                    x    "projects must be turned into canvas",
+                    x    "assignment 1 will be released in week 6",
+                    x    "assignment 1 is due week 7",
+                        "the midterm occurs on week 8",
+                        "the final occurs on week 9",
+                        "the final must be submitted to piazza",
+                    x    "projects are submitted as zip files",
+                    x    "assignments are submitted as pdf files"
+
+verbs
+will
+be
+has
+need
+finish
+doing
+is
+posted
+are
+check
+turn
+contribute
+submit
+close
+occurs
+submitted
+occur
+distributed
+begin
+
+adjectives
+mandatory
+long
+due
+complete
+late
+available
+all
+knowledge-based
+must
+preferred
+
+
+filler
+the
+during
+in
+and
+of
+to
+into
+a
+this
+as
+there
+by
+on
+for
+
+important
+many
+
+xx%
+does
+after
+should
+no
+worth
+write
+every
+learn
+do
+open
+have
+can
+turned
+teach
+released
+get
+0-100
+
+
+
+

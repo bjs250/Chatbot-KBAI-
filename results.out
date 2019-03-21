@@ -1,0 +1,97 @@
+
+======Sentence: ['does', 'project', '1', 'begin', 'on', 'week', '3']
+start
+stored {'name': '1', 'start': '3', 'end': '6', 'grade': None, 'duration': '3'}
+question {'name': '1', 'start': '3', 'end': None, 'grade': None, 'duration': None}
+has: yes
+answer: yes 
+
+======Sentence: ['is', 'project', '1', 'due', 'on', 'week', '6']
+end
+stored {'name': '1', 'start': '3', 'end': '6', 'grade': None, 'duration': '3'}
+question {'name': '1', 'start': None, 'end': '6', 'grade': None, 'duration': None}
+has: yes
+answer: yes 
+
+
+======Sentence: ['can', 'i', 'get', 'assignment', '1', 'in', 'week', '6']
+start
+stored {'name': '1', 'start': '6', 'end': '7', 'grade': None, 'duration': '1'}
+question {'name': '1', 'start': '6', 'end': None, 'grade': None, 'duration': None}
+has: yes
+answer: yes 
+
+======Sentence: ['do', 'i', 'have', '1', 'week', 'to', 'complete', 'assignment', '1']
+duration
+stored {'name': '1', 'start': '6', 'end': '7', 'grade': None, 'duration': '1'}
+question {'name': '1', 'start': None, 'end': None, 'grade': None, 'duration': '1'}
+has: yes
+answer: yes 
+
+
+
+======Sentence: ['do', 'i', 'turn', 'in', 'my', 'project', 'as', 'a', 'pdf']
+submission_type
+True
+
+
+
+======Sentence: ['is', 'the', 'midterm', 'after', 'assignment', '1']
+
+stored {'name': '1', 'start': '6', 'end': '7', 'grade': None, 'duration': '1'}
+question {'name': '1', 'start': None, 'end': None, 'grade': None, 'duration': None}
+answer: idk (attribute missing) 
+
+======Sentence: ['will', 'i', 'have', '3', 'weeks', 'to', 'finish', 'project', '1']
+duration
+stored {'name': '1', 'start': '3', 'end': '6', 'grade': None, 'duration': '3'}
+question {'name': '1', 'start': None, 'end': None, 'grade': None, 'duration': '3'}
+has: yes
+answer: yes 
+
+======Sentence: ['can', 'i', 'start', 'project', '1', 'in', 'week', '2']
+start
+stored {'name': '1', 'start': '3', 'end': '6', 'grade': None, 'duration': '3'}
+question {'name': '1', 'start': '2', 'end': None, 'grade': None, 'duration': None}
+has: yes
+answer: no 
+
+======Sentence: ['is', 'project', '1', 'worth', '15%']
+grade
+stored {'name': '1', 'start': '3', 'end': '6', 'grade': None, 'duration': '3'}
+question {'name': '1', 'start': None, 'end': None, 'grade': '15%', 'duration': None}
+has: yes
+answer: idk 
+
+======Sentence: ['is', 'assignment', '1', 'worth', '20%']
+grade
+stored {'name': '1', 'start': '6', 'end': '7', 'grade': None, 'duration': '1'}
+question {'name': '1', 'start': None, 'end': None, 'grade': '20%', 'duration': None}
+has: yes
+answer: idk 
+
+
+
+
+
+
+
+======Sentence: ['does', 'project', '1', 'contribute', '15%', 'to', 'my', 'grade']
+grade
+stored {'name': '1', 'start': '3', 'end': '6', 'grade': None, 'duration': '3'}
+question {'name': '1', 'start': None, 'end': None, 'grade': '15%', 'duration': None}
+has: yes
+answer: idk 
+
+======Sentence: ['do', 'i', 'need', 'to', 'write', 'a', 'report', 'for', 'project', '1']
+
+stored {'name': '1', 'start': '3', 'end': '6', 'grade': None, 'duration': '3'}
+question {'name': '1', 'start': None, 'end': None, 'grade': None, 'duration': None}
+answer: idk (attribute missing) 
+
+======Sentence: ['if', 'i', 'turn', 'in', 'project', '1', 'late', 'do', 'i', 'get', 'credit']
+start
+stored {'name': '1', 'start': '3', 'end': '6', 'grade': None, 'duration': '3'}
+question {'name': '1', 'start': None, 'end': None, 'grade': None, 'duration': None}
+has: yes
+
