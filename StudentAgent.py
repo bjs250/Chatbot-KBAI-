@@ -46,8 +46,9 @@ class StudentAgent:
         self.submission_location = topic('submission_location',['canvas','piazza'])
         self.grade = topic('grade',['worth','contribute'])
         self.duration = topic('duration', ['complete','finish'])
+        self.late_policy = topic('late',['late','credit'])
         
-        self.topics = [self.start,self.end,self.submission_type,self.submission_location,self.grade,self.duration]
+        self.topics = [self.start,self.end,self.submission_type,self.submission_location,self.grade,self.duration,self.late_policy]
 
         self.d = {}
 
@@ -174,33 +175,33 @@ class StudentAgent:
             # Compare the frames
             if instance.name in self.d[green_word]:
                 stored = self.d[green_word][instance.name]
-                print(topic)
-                print("stored",vars(stored))
-                print("question",vars(instance))
-                # Both have the attribute
-                if hasattr(stored,topic) and hasattr(instance,topic):
-                    print("has: yes")
-                    # They match
-                    if getattr(stored,topic) == getattr(instance,topic) and getattr(stored,topic) is not None:
-                        print("answer: yes \n")
-                        _answer = "yes"
-                        return _answer
-                    # They don't match
-                    elif getattr(stored,topic) != getattr(instance,topic) and getattr(stored,topic) is not None and getattr(instance,topic) is not None:
-                        print("answer: no \n")
-                        _answer = "no"
-                        return _answer
-                    elif getattr(stored,topic) == None:
-                        print("answer: idk \n")
-                        _answer = "idk"
-                        return _answer
-                else:
-                    print("answer: idk (attribute missing) \n")
-                    return "idk"
             else:
-                # maybe a generic question?
-                print(topic)
-                if hasattr(class_,topic)
+                stored = class_
+            print(topic)
+            print("stored",vars(stored))
+            print("question",vars(instance))
+            print("submission_type",stored.submission_type,instance.submission_type)
+            
+            # Both have the attribute
+            if hasattr(stored,topic) and hasattr(instance,topic):
+                print("has: yes")
+                # They match
+                if getattr(stored,topic) == getattr(instance,topic) and getattr(stored,topic) is not None:
+                    print("answer: yes \n")
+                    _answer = "yes"
+                    return _answer
+                # They don't match
+                elif getattr(stored,topic) != getattr(instance,topic) and getattr(stored,topic) is not None and getattr(instance,topic) is not None:
+                    print("answer: no \n")
+                    _answer = "no"
+                    return _answer
+                elif getattr(stored,topic) == None:
+                    print("answer: idk \n")
+                    _answer = "idk"
+                    return _answer
+            else:
+                print("answer: idk (attribute missing) \n")
+                return "idk"
 
         print()
         _answer = "no"
